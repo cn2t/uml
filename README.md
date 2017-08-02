@@ -19,9 +19,9 @@
 请选择安装`64bit`的操作系统，目前还没做32bit的包
 VPS必须支持并开启TUN/TAP
 
-# 一键运行脚本
+# 一键运行脚本 UML
 ```
-wget -N --no-check-certificate https://raw.githubusercontent.com/91yun/uml/master/bbr/uml.sh && bash uml.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/cn2t/uml/master/bbr/uml.sh && bash uml.sh
 ```
 装完ssr和bbr就已经运行了，如果你不想改密码和端口的话就可以直接用。。默认配置在下面。。
 # UML相关说明
@@ -76,3 +76,8 @@ iptables -t nat -A PREROUTING -i venet0 -p udp --dport 9191 -j DNAT --to-destina
 python mujson_mgr.py -a -p 端口 -k 密码 -m 加密方式 -O 协议 -o 混淆
 ```
 加完记得在母机增加iptables端口转发相关的代码
+
+# 一键运行脚本 LKL
+```
+wget --no-check-certificate https://github.com/cn2t/uml/raw/master/lkl/install.sh && bash install.sh
+```
